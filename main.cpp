@@ -21,7 +21,7 @@ const static int verticalMove[8]{ -2,-2, -1,1,2,2,1,-1 };
 // Function Prototypes (You can change these if you know what you are doing) but these functions are really useful for this project
 MoveType promptMove();
 void printBoard(const ChessBoard&);
-void performMove(ChessBoard&, const MoveType&, const Position&, uint&);
+void performMove(ChessBoard&, const MoveType&, Position&, uint&);
 bool isValidMove(const ChessBoard&, const MoveType&, const Position&);
 bool isFinished(const ChessBoard&, const Position&, uint);
 
@@ -92,7 +92,7 @@ bool isValidMove(const ChessBoard& board, const MoveType& m, const Position& p) 
 // Updates the state of the chessboard by taking the proposed move and the knight's current
 // position to find the new position of the knight.
 ////////////////////////////////////////////////////////////////////////////////////////////////
-void performMove(ChessBoard& board, const MoveType& m, const Position& p, uint& count) {
+void performMove(ChessBoard& board, const MoveType& m, Position& p, uint& count) {
 	
 }
 
